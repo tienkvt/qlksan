@@ -21,7 +21,7 @@ namespace QuanLyKhachSan._2._1
         }
         public string NextID(string lastID, string prefixID)
         {
-            if (lastID == "")
+            if (string.IsNullOrEmpty(lastID))
             {
                 return prefixID + "0001";  // fixwidth default
             }

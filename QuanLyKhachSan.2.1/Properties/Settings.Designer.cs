@@ -33,5 +33,16 @@ namespace QuanLyKhachSan._2._1.Properties {
                 return ((string)(this["QLKSConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-RHDVU9P\\MAYAO;Initial Catalog=QLKS;Persist Security Info=True" +
+            ";User ID=sa;Password=123")]
+        public string QLKSConnectionString1 {
+            get {
+                return ((string)(this["QLKSConnectionString1"]));
+            }
+        }
     }
 }

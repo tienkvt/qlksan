@@ -208,6 +208,10 @@ namespace QuanLyKhachSan._2._1
             BaoCaoKH a = new BaoCaoKH();
             a.ShowDialog();
         }
-       
+
+        private void gridControl1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

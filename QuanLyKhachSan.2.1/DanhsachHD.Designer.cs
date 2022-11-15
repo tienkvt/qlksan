@@ -1,4 +1,5 @@
-﻿namespace QuanLyKhachSan._2._1
+﻿
+namespace QuanLyKhachSan._2._1
 {
     partial class DanhsachHD
     {

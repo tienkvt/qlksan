@@ -30,6 +30,7 @@ namespace QuanLyKhachSan._2._1
             DataService db3 = new DataService();
             DataService db4 = new DataService();
             String sql = "select( ((select count(MaPhong) from [PHONG] where MaLoaiPhong='LI')* (select DonGia from LOAI_PHONG where MaLoaiPhong='LI'))+ ((select count(MaPhong) from[PHONG] where MaLoaiPhong = 'LII')*(select DonGia from LOAI_PHONG where MaLoaiPhong = 'LII'))+((select count(MaPhong) from[PHONG] where MaLoaiPhong = 'DB')*(select DonGia from LOAI_PHONG where MaLoaiPhong = 'DB')))";
+            //String sql = "select( ((select count(MaPhong) from [PHONG] where MaLoaiPhong='LI')* (select DonGia from LOAI_PHONG where MaLoaiPhong='LI'))+ ((select count(MaPhong) from[PHONG] where MaLoaiPhong = 'LII')*(select DonGia from LOAI_PHONG where MaLoaiPhong = 'LII'))+((select count(MaPhong) from[PHONG] where MaLoaiPhong = 'DB')*(select DonGia from LOAI_PHONG where MaLoaiPhong = 'DB')))";
             String sql1 = " select Sum(TongTien) from HOA_DON , CHI_TIET_PHIEU_NHAN_PHONG, PHIEU_NHAN_PHONG, PHONG where HOA_DON.MaNhanPhong = PHIEU_NHAN_PHONG.MaNhanPhong and PHIEU_NHAN_PHONG.MaNhanPhong = CHI_TIET_PHIEU_NHAN_PHONG.MaNhanPhong and PHONG.MaPhong = CHI_TIET_PHIEU_NHAN_PHONG.MaPhong";
             String sql2 = " select(((select count(MaPhong) from[PHONG] where MaLoaiPhong = 'LI') * (select DonGia from LOAI_PHONG where MaLoaiPhong = 'LI'))+((select count(MaPhong) from[PHONG] where MaLoaiPhong = 'LII')*(select DonGia from LOAI_PHONG where MaLoaiPhong = 'LII'))+((select count(MaPhong) from[PHONG] where MaLoaiPhong = 'DB')*(select DonGia from LOAI_PHONG where MaLoaiPhong = 'DB')))/ (select Sum(TongTien)from HOA_DON, CHI_TIET_PHIEU_NHAN_PHONG, PHIEU_NHAN_PHONG, PHONG where HOA_DON.MaNhanPhong = PHIEU_NHAN_PHONG.MaNhanPhong and PHIEU_NHAN_PHONG.MaNhanPhong = CHI_TIET_PHIEU_NHAN_PHONG.MaNhanPhong and PHONG.MaPhong = CHI_TIET_PHIEU_NHAN_PHONG.MaPhong)*100";
             String sql3 = "select count(MaPhong) from [PHONG]";
@@ -53,7 +54,7 @@ namespace QuanLyKhachSan._2._1
             SqlDataReader dr2 = db2.getDataReader(sql2);
             if (dr2.Read())
             {
-                txttiledoanhthu.Text = dr2[0].ToString();
+               txttiledoanhthu.Text = dr2[0].ToString();
                txttieledoanhthu1.Text= dr2[0].ToString();
                
             }

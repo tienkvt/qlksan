@@ -24,5 +24,7 @@ namespace QuanLyKhachSan._2._1
 
             this.reportViewer1.RefreshReport();
         }
-    }
+    } 
 }
+
+

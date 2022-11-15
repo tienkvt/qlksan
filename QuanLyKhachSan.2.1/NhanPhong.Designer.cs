@@ -64,10 +64,10 @@
             // 
             // gridControl1
             // 
-            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
             this.gridControl1.Location = new System.Drawing.Point(14, 192);
             this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(4);
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.Size = new System.Drawing.Size(1564, 708);
             this.gridControl1.TabIndex = 32;
@@ -93,7 +93,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 231F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 153F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 113F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 133F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 134F));
             this.tableLayoutPanel2.Controls.Add(this.btnThem, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.bntSua, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnXoa, 2, 0);
@@ -102,7 +102,7 @@
             this.tableLayoutPanel2.Controls.Add(this.btnRefresh, 6, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnTimKiem, 3, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(14, 140);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -119,7 +119,7 @@
             this.btnThem.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.btnThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.ImageOptions.Image")));
             this.btnThem.Location = new System.Drawing.Point(86, 4);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(86, 35);
             this.btnThem.TabIndex = 2;
@@ -135,8 +135,8 @@
             this.bntSua.Appearance.Options.UseForeColor = true;
             this.bntSua.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.bntSua.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bntSua.ImageOptions.Image")));
-            this.bntSua.Location = new System.Drawing.Point(332, 4);
-            this.bntSua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bntSua.Location = new System.Drawing.Point(331, 4);
+            this.bntSua.Margin = new System.Windows.Forms.Padding(4);
             this.bntSua.Name = "bntSua";
             this.bntSua.Size = new System.Drawing.Size(90, 35);
             this.bntSua.TabIndex = 4;
@@ -152,8 +152,8 @@
             this.btnXoa.Appearance.Options.UseForeColor = true;
             this.btnXoa.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.btnXoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.ImageOptions.Image")));
-            this.btnXoa.Location = new System.Drawing.Point(597, 4);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnXoa.Location = new System.Drawing.Point(596, 4);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(90, 35);
             this.btnXoa.TabIndex = 6;
@@ -170,7 +170,7 @@
             this.btnThoat.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.btnThoat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.ImageOptions.Image")));
             this.btnThoat.Location = new System.Drawing.Point(1440, 4);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(97, 35);
             this.btnThoat.TabIndex = 22;
@@ -182,8 +182,8 @@
             this.txtTimkiem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTimkiem.Location = new System.Drawing.Point(929, 4);
-            this.txtTimkiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTimkiem.Location = new System.Drawing.Point(928, 4);
+            this.txtTimkiem.Margin = new System.Windows.Forms.Padding(4);
             this.txtTimkiem.Name = "txtTimkiem";
             this.txtTimkiem.Size = new System.Drawing.Size(223, 22);
             this.txtTimkiem.TabIndex = 21;
@@ -197,8 +197,8 @@
             this.btnRefresh.Appearance.Options.UseForeColor = true;
             this.btnRefresh.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.btnRefresh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.ImageOptions.Image")));
-            this.btnRefresh.Location = new System.Drawing.Point(1314, 4);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRefresh.Location = new System.Drawing.Point(1313, 4);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(102, 35);
             this.btnRefresh.TabIndex = 23;
@@ -215,8 +215,8 @@
             this.btnTimKiem.AutoWidthInLayoutControl = true;
             this.btnTimKiem.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.btnTimKiem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.ImageOptions.Image")));
-            this.btnTimKiem.Location = new System.Drawing.Point(798, 4);
-            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTimKiem.Location = new System.Drawing.Point(797, 4);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(117, 35);
             this.btnTimKiem.TabIndex = 20;
@@ -233,7 +233,7 @@
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
             this.labelControl1.Location = new System.Drawing.Point(679, 6);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(278, 36);
             this.labelControl1.TabIndex = 29;
@@ -253,7 +253,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 240F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 267F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 133F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 134F));
             this.tableLayoutPanel3.Controls.Add(this.cbPhong, 3, 1);
             this.tableLayoutPanel3.Controls.Add(this.labelControl4, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.cbphieuthue, 6, 0);
@@ -268,7 +268,7 @@
             this.tableLayoutPanel3.Controls.Add(this.btnPhong, 4, 1);
             this.tableLayoutPanel3.Controls.Add(this.labelControl8, 2, 1);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(14, 49);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.31507F));
@@ -280,8 +280,8 @@
             // 
             this.cbPhong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbPhong.FormattingEnabled = true;
-            this.cbPhong.Location = new System.Drawing.Point(513, 45);
-            this.cbPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbPhong.Location = new System.Drawing.Point(512, 45);
+            this.cbPhong.Margin = new System.Windows.Forms.Padding(4);
             this.cbPhong.Name = "cbPhong";
             this.cbPhong.Size = new System.Drawing.Size(291, 24);
             this.cbPhong.TabIndex = 37;
@@ -294,7 +294,7 @@
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Location = new System.Drawing.Point(4, 45);
-            this.labelControl4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(126, 17);
             this.labelControl4.TabIndex = 33;
@@ -304,8 +304,8 @@
             // 
             this.cbphieuthue.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbphieuthue.FormattingEnabled = true;
-            this.cbphieuthue.Location = new System.Drawing.Point(1159, 4);
-            this.cbphieuthue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbphieuthue.Location = new System.Drawing.Point(1158, 4);
+            this.cbphieuthue.Margin = new System.Windows.Forms.Padding(4);
             this.cbphieuthue.Name = "cbphieuthue";
             this.cbphieuthue.Size = new System.Drawing.Size(259, 24);
             this.cbphieuthue.TabIndex = 32;
@@ -314,8 +314,8 @@
             // 
             this.btphieuthue.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.btphieuthue.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btphieuthue.ImageOptions.Image")));
-            this.btphieuthue.Location = new System.Drawing.Point(1426, 4);
-            this.btphieuthue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btphieuthue.Location = new System.Drawing.Point(1425, 4);
+            this.btphieuthue.Margin = new System.Windows.Forms.Padding(4);
             this.btphieuthue.Name = "btphieuthue";
             this.btphieuthue.Size = new System.Drawing.Size(96, 28);
             this.btphieuthue.TabIndex = 30;
@@ -330,7 +330,7 @@
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl5.Appearance.Options.UseFont = true;
             this.labelControl5.Location = new System.Drawing.Point(4, 4);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(87, 17);
             this.labelControl5.TabIndex = 12;
@@ -341,8 +341,8 @@
             this.txtMaphiedk.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMaphiedk.Location = new System.Drawing.Point(148, 4);
-            this.txtMaphiedk.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaphiedk.Location = new System.Drawing.Point(147, 4);
+            this.txtMaphiedk.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaphiedk.Name = "txtMaphiedk";
             this.txtMaphiedk.Properties.ReadOnly = true;
             this.txtMaphiedk.Size = new System.Drawing.Size(227, 22);
@@ -355,8 +355,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Location = new System.Drawing.Point(383, 4);
-            this.labelControl9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelControl9.Location = new System.Drawing.Point(382, 4);
+            this.labelControl9.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(114, 17);
             this.labelControl9.TabIndex = 13;
@@ -369,8 +369,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Location = new System.Drawing.Point(1067, 4);
-            this.labelControl10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelControl10.Location = new System.Drawing.Point(1066, 4);
+            this.labelControl10.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(77, 17);
             this.labelControl10.TabIndex = 18;
@@ -380,8 +380,8 @@
             // 
             this.btnTenKH.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.btnTenKH.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTenKH.ImageOptions.Image")));
-            this.btnTenKH.Location = new System.Drawing.Point(827, 4);
-            this.btnTenKH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTenKH.Location = new System.Drawing.Point(826, 4);
+            this.btnTenKH.Margin = new System.Windows.Forms.Padding(4);
             this.btnTenKH.Name = "btnTenKH";
             this.btnTenKH.Size = new System.Drawing.Size(121, 28);
             this.btnTenKH.TabIndex = 29;
@@ -392,8 +392,8 @@
             // 
             this.cbTenKH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTenKH.FormattingEnabled = true;
-            this.cbTenKH.Location = new System.Drawing.Point(513, 4);
-            this.cbTenKH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbTenKH.Location = new System.Drawing.Point(512, 4);
+            this.cbTenKH.Margin = new System.Windows.Forms.Padding(4);
             this.cbTenKH.Name = "cbTenKH";
             this.cbTenKH.Size = new System.Drawing.Size(291, 24);
             this.cbTenKH.TabIndex = 31;
@@ -401,8 +401,8 @@
             // 
             // dtNgayNhan
             // 
-            this.dtNgayNhan.Location = new System.Drawing.Point(148, 45);
-            this.dtNgayNhan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtNgayNhan.Location = new System.Drawing.Point(147, 45);
+            this.dtNgayNhan.Margin = new System.Windows.Forms.Padding(4);
             this.dtNgayNhan.Name = "dtNgayNhan";
             this.dtNgayNhan.Size = new System.Drawing.Size(227, 23);
             this.dtNgayNhan.TabIndex = 34;
@@ -411,8 +411,8 @@
             // 
             this.btnPhong.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.btnPhong.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPhong.ImageOptions.Image")));
-            this.btnPhong.Location = new System.Drawing.Point(827, 45);
-            this.btnPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPhong.Location = new System.Drawing.Point(826, 45);
+            this.btnPhong.Margin = new System.Windows.Forms.Padding(4);
             this.btnPhong.Name = "btnPhong";
             this.btnPhong.Size = new System.Drawing.Size(121, 28);
             this.btnPhong.TabIndex = 36;
@@ -426,8 +426,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(383, 45);
-            this.labelControl8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelControl8.Location = new System.Drawing.Point(382, 45);
+            this.labelControl8.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(45, 17);
             this.labelControl8.TabIndex = 35;
@@ -442,7 +442,7 @@
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.labelControl1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "NhanPhong";
             this.Text = "Nhận Phòng";
             this.Load += new System.EventHandler(this.NhanPhong_Load);

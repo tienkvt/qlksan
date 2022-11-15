@@ -198,9 +198,11 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="DanhsachHD.resx">
       <DependentUpon>DanhsachHD.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="DichVu.resx">
       <DependentUpon>DichVu.cs</DependentUpon>
@@ -214,6 +216,7 @@
     <EmbeddedResource Include="HoaDon.rdlc" />
     <EmbeddedResource Include="HoaDon1.resx">
       <DependentUpon>HoaDon1.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="KhachHang.rdlc" />
     <EmbeddedResource Include="KhachHang.resx">

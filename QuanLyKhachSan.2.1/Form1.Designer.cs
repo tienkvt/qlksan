@@ -81,6 +81,7 @@
             this.ribbonControl1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
+            this.ribbonControl1.SearchEditItem,
             this.barHeaderItem1,
             this.barHeaderItem2,
             this.barHeaderItem5,
@@ -96,10 +97,9 @@
             this.barHeaderItem17,
             this.barHeaderItem18,
             this.barButtonItem1,
-            this.barButtonItem2,
-            this.ribbonControl1.SearchEditItem});
+            this.barButtonItem2});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4);
             this.ribbonControl1.MaxItemId = 4;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.OptionsMenuMinWidth = 385;
@@ -267,19 +267,16 @@
             // 
             this.ribbonPageGroup1.ItemLinks.Add(this.barHeaderItem2);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "Thoát";
             // 
             // ribbonPageGroup5
             // 
             this.ribbonPageGroup5.ItemLinks.Add(this.barHeaderItem5);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
-            this.ribbonPageGroup5.Text = "Đăng Xuất";
             // 
             // ribbonPageGroup11
             // 
             this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem2);
             this.ribbonPageGroup11.Name = "ribbonPageGroup11";
-            this.ribbonPageGroup11.Text = "Phân Quyền";
             // 
             // ribbonPage2
             // 
@@ -300,37 +297,31 @@
             // 
             this.ribbonPageGroup2.ItemLinks.Add(this.barHeaderItem7);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "Khách Hàng";
             // 
             // ribbonPageGroup7
             // 
             this.ribbonPageGroup7.ItemLinks.Add(this.barHeaderItem9);
             this.ribbonPageGroup7.Name = "ribbonPageGroup7";
-            this.ribbonPageGroup7.Text = "Dịch Vụ";
             // 
             // ribbonPageGroup8
             // 
             this.ribbonPageGroup8.ItemLinks.Add(this.barHeaderItem10);
             this.ribbonPageGroup8.Name = "ribbonPageGroup8";
-            this.ribbonPageGroup8.Text = "Phòng";
             // 
             // ribbonPageGroup9
             // 
             this.ribbonPageGroup9.ItemLinks.Add(this.barHeaderItem11);
             this.ribbonPageGroup9.Name = "ribbonPageGroup9";
-            this.ribbonPageGroup9.Text = "Đăng Kí Phòng";
             // 
             // ribbonPageGroup6
             // 
             this.ribbonPageGroup6.ItemLinks.Add(this.barHeaderItem12);
             this.ribbonPageGroup6.Name = "ribbonPageGroup6";
-            this.ribbonPageGroup6.Text = "Nhận Phòng";
             // 
             // ribbonPageGroup10
             // 
             this.ribbonPageGroup10.ItemLinks.Add(this.barHeaderItem13);
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
-            this.ribbonPageGroup10.Text = "Trả Phòng";
             // 
             // ribbonPage3
             // 
@@ -349,26 +340,22 @@
             // 
             this.ribbonPageGroup3.ItemLinks.Add(this.barHeaderItem14);
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
-            this.ribbonPageGroup3.Text = "DS Khách Hàng Đăng Kí";
             // 
             // ribbonPageGroup12
             // 
             this.ribbonPageGroup12.ItemLinks.Add(this.barHeaderItem16);
             this.ribbonPageGroup12.Name = "ribbonPageGroup12";
-            this.ribbonPageGroup12.Text = "Thiế Bị";
             // 
             // ribbonPageGroup13
             // 
             this.ribbonPageGroup13.ItemLinks.Add(this.barHeaderItem17);
             this.ribbonPageGroup13.Name = "ribbonPageGroup13";
-            this.ribbonPageGroup13.Text = "Loại Phòng";
             // 
             // ribbonPageGroup14
             // 
             this.ribbonPageGroup14.ItemLinks.Add(this.barHeaderItem18);
             this.ribbonPageGroup14.ItemsLayout = DevExpress.XtraBars.Ribbon.RibbonPageGroupItemsLayout.TwoRows;
             this.ribbonPageGroup14.Name = "ribbonPageGroup14";
-            this.ribbonPageGroup14.Text = "Loại Dịch Vụ";
             // 
             // ribbonPage4
             // 
@@ -385,13 +372,11 @@
             // 
             this.ribbonPageGroup4.ItemLinks.Add(this.barHeaderItem1);
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
-            this.ribbonPageGroup4.Text = "Hóa Đơn";
             // 
             // ribbonPageGroup15
             // 
             this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem1);
             this.ribbonPageGroup15.Name = "ribbonPageGroup15";
-            this.ribbonPageGroup15.Text = "Thông Kê";
             // 
             // barHeaderItem3
             // 
@@ -430,7 +415,7 @@
             this.ClientSize = new System.Drawing.Size(1587, 944);
             this.Controls.Add(this.ribbonControl1);
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Ribbon = this.ribbonControl1;
             this.Text = "Khách Sạn Minh Nhật";

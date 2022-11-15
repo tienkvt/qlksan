@@ -32,9 +32,9 @@ namespace QuanLyKhachSan._2._1
             load_tenkh();
             load_manhanphong();
             LoadData();
-            load_machinhsach();
+            //load_machinhsach();
             load_maphong();
-            load_masddv();
+            //load_masddv();
             load_songay();
             load_tienphong();
             #region ham tang ma tu dong    
@@ -49,7 +49,8 @@ namespace QuanLyKhachSan._2._1
         public void LoadData()
         {
             DataService db = new DataService();
-            String sql = "select cthd.MaHoaDon,kh.MaKhachHang,kh.TenKhachHang,ctnp.MaPhong,LoaiDichVu,MaChinhSach,PhuThu,TienPhong,TienDichVu,GiamGiaKH,HinhThucThanhToan,SoNgay,ThanhTien from HOA_DON hd,CHI_TIET_HOA_DON cthd,PHIEU_NHAN_PHONG pnp,KHACH_HANG kh,CHI_TIET_PHIEU_NHAN_PHONG ctnp,DANH_SACH_SU_DUNG_DICH_VU ds,DICH_VU dv where hd.MaHoaDon=cthd.MaHoaDon and hd.MaNhanPhong=pnp.MaNhanPhong and pnp.MaKhachHang=kh.MaKhachHang and cthd.MaSuDungDVu=ds.MaSuDungDvu and ds.MaDichVu=dv.MaDichVu and pnp.MaNhanPhong=ctnp.MaNhanPhong";
+            //String sql = "select cthd.MaHoaDon,kh.MaKhachHang,kh.TenKhachHang,ctnp.MaPhong,LoaiDichVu,MaChinhSach,PhuThu,TienPhong,TienDichVu,GiamGiaKH,HinhThucThanhToan,SoNgay,ThanhTien from HOA_DON hd,CHI_TIET_HOA_DON cthd,PHIEU_NHAN_PHONG pnp,KHACH_HANG kh,CHI_TIET_PHIEU_NHAN_PHONG ctnp,DANH_SACH_SU_DUNG_DICH_VU ds,DICH_VU dv where hd.MaHoaDon=cthd.MaHoaDon and hd.MaNhanPhong=pnp.MaNhanPhong and pnp.MaKhachHang=kh.MaKhachHang and cthd.MaSuDungDVu=ds.MaSuDungDvu and ds.MaDichVu=dv.MaDichVu and pnp.MaNhanPhong=ctnp.MaNhanPhong";
+            String sql = "select cthd.MaHoaDon,kh.MaKhachHang,kh.TenKhachHang,ctnp.MaPhong,PhuThu,TienPhong,TienDichVu,GiamGiaKH,HinhThucThanhToan,SoNgay,ThanhTien from HOA_DON hd,CHI_TIET_HOA_DON cthd,PHIEU_NHAN_PHONG pnp,KHACH_HANG kh,CHI_TIET_PHIEU_NHAN_PHONG ctnp,DANH_SACH_SU_DUNG_DICH_VU ds,DICH_VU dv where hd.MaHoaDon=cthd.MaHoaDon and hd.MaNhanPhong=pnp.MaNhanPhong and pnp.MaKhachHang=kh.MaKhachHang and ds.MaDichVu=dv.MaDichVu and pnp.MaNhanPhong=ctnp.MaNhanPhong";
             DataTable dt = db.getDataTable(sql);
             gridControl1.DataSource = dt;
 
@@ -143,13 +144,13 @@ namespace QuanLyKhachSan._2._1
             {
                 TraPhong a = new TraPhong();
 
-                float tienphong = Convert.ToSingle(txtTienPhong.Text.ToString());
-                float tiendv = Convert.ToSingle(txtTienDV.Text.ToString());
+                float tienphong = Convert.ToSingle(txtTienPhong.Text);
+                float tiendv = Convert.ToSingle(txtTienDV.Text);
                 float giamgia = Convert.ToSingle(txtGiamGia.Text);
                 int songay =Convert.ToInt16( txtSoNgay.Text);
-                float phuthu = Convert.ToSingle(txtPhuThu.Text.ToString());
-                float thanhtien = Convert.ToSingle((tienphong * songay) + tiendv + (tienphong * phuthu) - giamgia);
-                txtThanhTien.Text = thanhtien.ToString();
+                float phuthu = Convert.ToSingle(txtPhuThu.Text);
+                float thanhtien = Convert.ToSingle((tienphong * songay) + tiendv + phuthu - giamgia);
+                txtThanhTien.Text = string.Format("{0,6:##0.00}", thanhtien);
                 txtTongTien.Text = txtThanhTien.Text;
              
                 
@@ -174,24 +175,25 @@ namespace QuanLyKhachSan._2._1
             TraPhong b = new TraPhong();
             b.songay();
             String sql,sql3;
-            String tienphong = txtTienPhong.Text;
-            String masddv = cbDV.SelectedValue.ToString();
+            var tienphong = float.Parse(txtTienPhong.Text);
+            //String masddv = cbDV.SelectedValue.ToString();
             String maphong = cbPhong.SelectedValue.ToString();
-            String tiendv = txtTienDV.Text;
-            String giamgiakh = txtGiamGia.Text;
-            String machinhsach = cbMaCS.SelectedValue.ToString();
-            String phuthu = txtPhuThu.Text;
+            var tiendv = float.Parse(txtTienDV.Text);
+            var giamgiakh = float.Parse(txtGiamGia.Text);
+            //String machinhsach = cbMaCS.SelectedValue.ToString();
+            var phuthu = float.Parse(txtPhuThu.Text);
             txtSoNgay.Text = b.songay().ToString();
-            String thanhtoan = txtThanhToan.Text;
-            String thanhtien = txtThanhTien.Text;
+            var thanhtoan = txtThanhToan.Text;
+            var thanhtien = float.Parse(txtThanhTien.Text);
             String mahoadon = txtMADK.Text;
             String nhanvien = txtNhanVien.Text;
             String makh = cbTenKH.SelectedValue.ToString();
             String manhanphong = cbphieuthue.SelectedValue.ToString();
-            String tongtien = txtTongTien.Text;
+            var tongtien = float.Parse(txtTongTien.Text);
             String time1 = dtNgayTra.Value.ToString();
             sql = "insert into [HOA_DON]([MaHoaDon],[NhanVienLap] ,[MaNhanPhong],[TongTien],[NgayLap]) values ('" + mahoadon + "',N'" + nhanvien + "','" + manhanphong + "','" + tongtien + "','" + time1 + "')";
-            String sql1 = "insert into [CHI_TIET_HOA_DON]([MaHoaDon],[MaPhong],[MaSuDungDVu],[MaChinhSach] ,[PhuThu],[TienPhong],[TienDichVu],[GiamGiaKH],[HinhThucThanhToan],[SoNgay],[ThanhTien]) values ('" + mahoadon + "','" + maphong + "',N'" + masddv + "','" + machinhsach + "','" + phuthu + "','" + tienphong + "','" + tiendv + "','" + giamgiakh + "',N'" + thanhtoan + "','" + txtSoNgay.Text + "','" + thanhtien + "')";
+            String sql1 = "insert into [CHI_TIET_HOA_DON]([MaHoaDon],[MaPhong] ,[PhuThu],[TienPhong],[TienDichVu],[GiamGiaKH],[HinhThucThanhToan],[SoNgay],[ThanhTien]) values ('" + mahoadon + "','" + maphong + "','" + phuthu + "','" + tienphong + "','" + tiendv + "','" + giamgiakh + "',N'" + thanhtoan + "','" + txtSoNgay.Text + "','" + thanhtien + "')";
+            //String sql1 = "insert into [CHI_TIET_HOA_DON]([MaHoaDon],[MaPhong] ,[PhuThu],[TienPhong],[TienDichVu],[GiamGiaKH],[HinhThucThanhToan],[SoNgay],[ThanhTien]) values ('" + mahoadon + "','" + maphong + "',N'" + "','" + phuthu + "','" + tienphong + "','" + tiendv + "','" + giamgiakh + "',N'" + thanhtoan + "','" + txtSoNgay.Text + "','" + thanhtien + "')";
             sql3 = "update PHONG set  MaLoaiTinhTrangPhong=N'1' where MaPhong='" + maphong + "'";
             DataService db = new DataService();
             db.executeQuery(sql);
@@ -278,9 +280,9 @@ namespace QuanLyKhachSan._2._1
             String time1 = dtNgayTra.Value.ToString();
             String mahoadon = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaHoaDon").ToString();
             String maphong = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaPhong").ToString();
-            String masddv = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaSuDungDVu").ToString();
-            String macs = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaChinhSach").ToString();
-            sql = "update [CHI_TIET_HOA_DON] set[PhuThu]='" + phuthu + "',[TienPhong]='" + tienphong + "',[TienDichVu]='" + tiendv + "',  [GiamGiaKH]='" + giamgiakh + "',[HinhThucThanhToan]=N'" + thanhtoan + "',[SoNgay]='" + songay + "',[ThanhTien]='" + thanhtien + "' where [MaHoaDon]='" + mahoadon + "' and [MaPhong]='" + maphong + "'and [MaSuDungDVu]='" + masddv + "'and [MaChinhSach]='" + macs + "' ";
+            //String masddv = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaSuDungDVu").ToString();
+            //String macs = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaChinhSach").ToString();
+            sql = "update [CHI_TIET_HOA_DON] set[PhuThu]='" + phuthu + "',[TienPhong]='" + tienphong + "',[TienDichVu]='" + tiendv + "',  [GiamGiaKH]='" + giamgiakh + "',[HinhThucThanhToan]=N'" + thanhtoan + "',[SoNgay]='" + songay + "',[ThanhTien]='" + thanhtien + "' where [MaHoaDon]='" + mahoadon + "' and [MaPhong]='" + maphong + "' ";
             DataService db = new DataService();
            db.executeQuery(sql);
 
@@ -350,10 +352,10 @@ namespace QuanLyKhachSan._2._1
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             LoadData();
-            load_machinhsach();
+            //load_machinhsach();
             load_manhanphong();
             load_maphong();
-            load_masddv();
+            //load_masddv();
             load_tenkh();
             load_tienphong();
             songay();
@@ -367,9 +369,9 @@ namespace QuanLyKhachSan._2._1
         {
       
             load_manhanphong();
-            load_machinhsach();      
+            //load_machinhsach();      
             load_maphong();
-            load_masddv();
+            //load_masddv();
             load_tienphong();
 
         }
@@ -413,6 +415,11 @@ namespace QuanLyKhachSan._2._1
            // String makh = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaHoaDon").ToString();
             HoaDon1 a = new HoaDon1(tenkh,ma);
             a.ShowDialog();
+        }
+
+        private void txtPhuThu_EditValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
