@@ -70,7 +70,7 @@ namespace QuanLyKhachSan._2._1
             if (check_masv() == false)
             {
                 click_them();
-                MessageBox.Show("Bạn đã thêm thành công sinh viên và điểm", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Bạn đã thêm thành công Khách hàng", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LoadData();
             }
 
@@ -88,7 +88,7 @@ namespace QuanLyKhachSan._2._1
 
         private void btnXoa_Click_1(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn có thật sự muốn xóa một sinh viên !!!", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            if (MessageBox.Show("Bạn có thật sự muốn xóa một Khách hàng !!!", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
             {
                 
                 LoadData();
@@ -120,7 +120,7 @@ namespace QuanLyKhachSan._2._1
         {
             click_sua();
             LoadData();
-            MessageBox.Show("bạn đã sửa thông tin sinh viên  ", "thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("bạn đã sửa thông tin Khách hàng  ", "thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)

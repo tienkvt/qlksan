@@ -125,7 +125,8 @@ namespace QuanLyKhachSan._2._1
        public void load_ngaynhan()
         {
             DataService db = new DataService();
-            string sql = "select NgayNhan from CHI_TIET_PHIEU_NHAN_PHONG where MaNhanPhong='" + cbphieuthue.SelectedValue.ToString()+"'";
+            //string sql = "select NgayNhan from CHI_TIET_PHIEU_NHAN_PHONG where MaNhanPhong='" + cbphieuthue.SelectedValue.ToString()+"'";
+            string sql = "select ctnp.NgayNhan from PHIEU_NHAN_PHONG np,CHI_TIET_PHIEU_NHAN_PHONG ctnp where np.MaNhanPhong=ctnp.MaNhanPhong and np.MaKhachHang='" + cbTenKH.SelectedValue.ToString() + "'";
             SqlDataReader dr = db.getDataReader(sql);
             if(dr.Read())
             {
@@ -373,7 +374,7 @@ namespace QuanLyKhachSan._2._1
             load_maphong();
             //load_masddv();
             load_tienphong();
-
+            load_ngaynhan();
         }
 
         private void dtNgayTra_ValueChanged(object sender, EventArgs e)

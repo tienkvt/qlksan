@@ -75,7 +75,7 @@
             this.tabPane1.Controls.Add(this.tabNavigationPage2);
             this.tabPane1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPane1.Location = new System.Drawing.Point(14, 53);
-            this.tabPane1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPane1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPane1.Name = "tabPane1";
             this.tabPane1.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.tabNavigationPage1,
@@ -97,14 +97,14 @@
             this.tabNavigationPage1.Controls.Add(this.label4);
             this.tabNavigationPage1.Controls.Add(this.label3);
             this.tabNavigationPage1.Controls.Add(this.label2);
-            this.tabNavigationPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabNavigationPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabNavigationPage1.Name = "tabNavigationPage1";
             this.tabNavigationPage1.Size = new System.Drawing.Size(631, 252);
             // 
             // txttiledoanhthu
             // 
             this.txttiledoanhthu.Location = new System.Drawing.Point(279, 139);
-            this.txttiledoanhthu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txttiledoanhthu.Margin = new System.Windows.Forms.Padding(4);
             this.txttiledoanhthu.Name = "txttiledoanhthu";
             this.txttiledoanhthu.ReadOnly = true;
             this.txttiledoanhthu.Size = new System.Drawing.Size(305, 23);
@@ -113,7 +113,7 @@
             // txtdoanhthuthucte
             // 
             this.txtdoanhthuthucte.Location = new System.Drawing.Point(279, 78);
-            this.txtdoanhthuthucte.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtdoanhthuthucte.Margin = new System.Windows.Forms.Padding(4);
             this.txtdoanhthuthucte.Name = "txtdoanhthuthucte";
             this.txtdoanhthuthucte.ReadOnly = true;
             this.txtdoanhthuthucte.Size = new System.Drawing.Size(305, 23);
@@ -121,11 +121,11 @@
             // 
             // txtdoanhthuthang
             // 
-            this.txtdoanhthuthang.Location = new System.Drawing.Point(279, 22);
-            this.txtdoanhthuthang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtdoanhthuthang.Location = new System.Drawing.Point(324, 22);
+            this.txtdoanhthuthang.Margin = new System.Windows.Forms.Padding(4);
             this.txtdoanhthuthang.Name = "txtdoanhthuthang";
             this.txtdoanhthuthang.ReadOnly = true;
-            this.txtdoanhthuthang.Size = new System.Drawing.Size(305, 23);
+            this.txtdoanhthuthang.Size = new System.Drawing.Size(260, 23);
             this.txtdoanhthuthang.TabIndex = 7;
             // 
             // label4
@@ -172,14 +172,14 @@
             this.tabNavigationPage2.Controls.Add(this.label5);
             this.tabNavigationPage2.Controls.Add(this.label6);
             this.tabNavigationPage2.Controls.Add(this.label7);
-            this.tabNavigationPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabNavigationPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabNavigationPage2.Name = "tabNavigationPage2";
-            this.tabNavigationPage2.Size = new System.Drawing.Size(610, 238);
+            this.tabNavigationPage2.Size = new System.Drawing.Size(631, 252);
             // 
             // txtchisuatphong
             // 
             this.txtchisuatphong.Location = new System.Drawing.Point(293, 194);
-            this.txtchisuatphong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtchisuatphong.Margin = new System.Windows.Forms.Padding(4);
             this.txtchisuatphong.Name = "txtchisuatphong";
             this.txtchisuatphong.ReadOnly = true;
             this.txtchisuatphong.Size = new System.Drawing.Size(299, 23);
@@ -188,7 +188,7 @@
             // txtsoluongphong
             // 
             this.txtsoluongphong.Location = new System.Drawing.Point(293, 149);
-            this.txtsoluongphong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtsoluongphong.Margin = new System.Windows.Forms.Padding(4);
             this.txtsoluongphong.Name = "txtsoluongphong";
             this.txtsoluongphong.ReadOnly = true;
             this.txtsoluongphong.Size = new System.Drawing.Size(299, 23);
@@ -197,7 +197,7 @@
             // txttieledoanhthu1
             // 
             this.txttieledoanhthu1.Location = new System.Drawing.Point(293, 101);
-            this.txttieledoanhthu1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txttieledoanhthu1.Margin = new System.Windows.Forms.Padding(4);
             this.txttieledoanhthu1.Name = "txttieledoanhthu1";
             this.txttieledoanhthu1.ReadOnly = true;
             this.txttieledoanhthu1.Size = new System.Drawing.Size(299, 23);
@@ -206,7 +206,7 @@
             // txtdoanthuthucte1
             // 
             this.txtdoanthuthucte1.Location = new System.Drawing.Point(293, 53);
-            this.txtdoanthuthucte1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtdoanthuthucte1.Margin = new System.Windows.Forms.Padding(4);
             this.txtdoanthuthucte1.Name = "txtdoanthuthucte1";
             this.txtdoanthuthucte1.ReadOnly = true;
             this.txtdoanthuthucte1.Size = new System.Drawing.Size(299, 23);
@@ -215,7 +215,7 @@
             // txttongdoanhthuthang1
             // 
             this.txttongdoanhthuthang1.Location = new System.Drawing.Point(293, 15);
-            this.txttongdoanhthuthang1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txttongdoanhthuthang1.Margin = new System.Windows.Forms.Padding(4);
             this.txttongdoanhthuthang1.Name = "txttongdoanhthuthang1";
             this.txttongdoanhthuthang1.ReadOnly = true;
             this.txttongdoanhthuthang1.Size = new System.Drawing.Size(299, 23);
@@ -276,7 +276,7 @@
             this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
             this.simpleButton1.Location = new System.Drawing.Point(24, 353);
-            this.simpleButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(4);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(130, 41);
             this.simpleButton1.TabIndex = 2;
@@ -288,7 +288,7 @@
             this.simpleButton3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
             this.simpleButton3.Location = new System.Drawing.Point(505, 353);
-            this.simpleButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.simpleButton3.Margin = new System.Windows.Forms.Padding(4);
             this.simpleButton3.Name = "simpleButton3";
             this.simpleButton3.Size = new System.Drawing.Size(130, 41);
             this.simpleButton3.TabIndex = 4;
@@ -304,7 +304,7 @@
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.tabPane1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimizeBox = false;
             this.Name = "ThongKe";
             this.Text = "Thống Kê";

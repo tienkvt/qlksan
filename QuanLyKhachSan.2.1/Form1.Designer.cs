@@ -418,7 +418,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Ribbon = this.ribbonControl1;
-            this.Text = "Khách Sạn Minh Nhật";
+            this.Text = "PHẦN MỀM QUẢN LÝ KHÁCH SẠN";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             this.ResumeLayout(false);

@@ -111,7 +111,7 @@ namespace QuanLyKhachSan._2._1
                 db.executeQuery(sql);
                 db.executeQuery(sql2);
                 db.executeQuery(sql3);
-                MessageBox.Show("Bạn đã thêm thành công sinh viên và điểm", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Bạn đã thêm thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             
         }
@@ -171,7 +171,7 @@ namespace QuanLyKhachSan._2._1
         {
             click_sua();
             LoadData();
-            MessageBox.Show("bạn đã sửa thông tin sinh viên  ", "thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("bạn đã sửa thông tin ", "thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         public void click_xoa()
         {
@@ -187,7 +187,7 @@ namespace QuanLyKhachSan._2._1
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn có thật sự muốn xóa một sinh viên !!!", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            if (MessageBox.Show("Bạn có thật sự muốn xóa !!!", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
             {
 
                 LoadData();
