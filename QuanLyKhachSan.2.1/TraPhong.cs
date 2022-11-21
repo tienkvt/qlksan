@@ -50,7 +50,8 @@ namespace QuanLyKhachSan._2._1
         {
             DataService db = new DataService();
             //String sql = "select cthd.MaHoaDon,kh.MaKhachHang,kh.TenKhachHang,ctnp.MaPhong,LoaiDichVu,MaChinhSach,PhuThu,TienPhong,TienDichVu,GiamGiaKH,HinhThucThanhToan,SoNgay,ThanhTien from HOA_DON hd,CHI_TIET_HOA_DON cthd,PHIEU_NHAN_PHONG pnp,KHACH_HANG kh,CHI_TIET_PHIEU_NHAN_PHONG ctnp,DANH_SACH_SU_DUNG_DICH_VU ds,DICH_VU dv where hd.MaHoaDon=cthd.MaHoaDon and hd.MaNhanPhong=pnp.MaNhanPhong and pnp.MaKhachHang=kh.MaKhachHang and cthd.MaSuDungDVu=ds.MaSuDungDvu and ds.MaDichVu=dv.MaDichVu and pnp.MaNhanPhong=ctnp.MaNhanPhong";
-            String sql = "select cthd.MaHoaDon,kh.MaKhachHang,kh.TenKhachHang,ctnp.MaPhong,PhuThu,TienPhong,TienDichVu,GiamGiaKH,HinhThucThanhToan,SoNgay,ThanhTien from HOA_DON hd,CHI_TIET_HOA_DON cthd,PHIEU_NHAN_PHONG pnp,KHACH_HANG kh,CHI_TIET_PHIEU_NHAN_PHONG ctnp,DANH_SACH_SU_DUNG_DICH_VU ds,DICH_VU dv where hd.MaHoaDon=cthd.MaHoaDon and hd.MaNhanPhong=pnp.MaNhanPhong and pnp.MaKhachHang=kh.MaKhachHang and ds.MaDichVu=dv.MaDichVu and pnp.MaNhanPhong=ctnp.MaNhanPhong";
+            //String sql = "select cthd.MaHoaDon,kh.MaKhachHang,kh.TenKhachHang,ctnp.MaPhong,PhuThu,TienPhong,TienDichVu,GiamGiaKH,HinhThucThanhToan,SoNgay,ThanhTien from HOA_DON hd,CHI_TIET_HOA_DON cthd,PHIEU_NHAN_PHONG pnp,KHACH_HANG kh,CHI_TIET_PHIEU_NHAN_PHONG ctnp,DANH_SACH_SU_DUNG_DICH_VU ds,DICH_VU dv where hd.MaHoaDon=cthd.MaHoaDon and hd.MaNhanPhong=pnp.MaNhanPhong and pnp.MaKhachHang=kh.MaKhachHang and ds.MaDichVu=dv.MaDichVu and pnp.MaNhanPhong=ctnp.MaNhanPhong";
+            String sql = "SELECT * FROM[HOA_DON],[CHI_TIET_HOA_DON] WHERE HOA_DON.MaHoaDon = CHI_TIET_HOA_DON.MaHoaDon";
             DataTable dt = db.getDataTable(sql);
             gridControl1.DataSource = dt;
 
@@ -108,7 +109,7 @@ namespace QuanLyKhachSan._2._1
         public void load_tienphong()
         {
             DataService db = new DataService();
-            String sql = "select [DonGia] from [LOAI_PHONG],[PHONG] where LOAI_PHONG.MaLoaiPhong=PHONG.MaLoaiPhong";
+            String sql = "select [DonGia] from [LOAI_PHONG],[PHONG] where LOAI_PHONG.MaLoaiPhong=PHONG.MaLoaiPhong and PHONG.MaPhong='" + cbPhong?.SelectedValue?.ToString() + "'";
             SqlDataReader dr = db.getDataReader(sql);
             if (dr.Read())
             {

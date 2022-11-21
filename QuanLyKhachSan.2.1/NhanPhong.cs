@@ -69,9 +69,6 @@ namespace QuanLyKhachSan._2._1
                 cbPhong.DisplayMember = "MaPhong";
                 cbPhong.ValueMember = "MaPhong";
             }
-
-           
-            
         }
         public void loadphieuthue()
         {

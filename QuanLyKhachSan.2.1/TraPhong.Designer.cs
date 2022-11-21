@@ -106,7 +106,7 @@
             // 
             this.cbPhong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbPhong.FormattingEnabled = true;
-            this.cbPhong.Location = new System.Drawing.Point(153, 4);
+            this.cbPhong.Location = new System.Drawing.Point(152, 4);
             this.cbPhong.Margin = new System.Windows.Forms.Padding(4);
             this.cbPhong.Name = "cbPhong";
             this.cbPhong.Size = new System.Drawing.Size(210, 24);
@@ -140,7 +140,7 @@
             // 
             this.btphieuthue.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.btphieuthue.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btphieuthue.ImageOptions.Image")));
-            this.btphieuthue.Location = new System.Drawing.Point(414, 110);
+            this.btphieuthue.Location = new System.Drawing.Point(413, 110);
             this.btphieuthue.Margin = new System.Windows.Forms.Padding(4);
             this.btphieuthue.Name = "btphieuthue";
             this.btphieuthue.Size = new System.Drawing.Size(130, 30);
@@ -180,7 +180,7 @@
             // 
             this.btnTenKH.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.btnTenKH.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTenKH.ImageOptions.Image")));
-            this.btnTenKH.Location = new System.Drawing.Point(414, 74);
+            this.btnTenKH.Location = new System.Drawing.Point(413, 74);
             this.btnTenKH.Margin = new System.Windows.Forms.Padding(4);
             this.btnTenKH.Name = "btnTenKH";
             this.btnTenKH.Size = new System.Drawing.Size(130, 28);
@@ -214,7 +214,7 @@
             this.btnPhong.Appearance.Options.UseFont = true;
             this.btnPhong.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.btnPhong.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPhong.ImageOptions.Image")));
-            this.btnPhong.Location = new System.Drawing.Point(691, 185);
+            this.btnPhong.Location = new System.Drawing.Point(690, 185);
             this.btnPhong.Margin = new System.Windows.Forms.Padding(4);
             this.btnPhong.Name = "btnPhong";
             this.btnPhong.Size = new System.Drawing.Size(190, 34);
@@ -248,7 +248,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 266F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 121F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 113F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 158F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 159F));
             this.tableLayoutPanel2.Controls.Add(this.simpleButton2, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnThem, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.bntSua, 1, 0);
@@ -274,7 +274,7 @@
             this.simpleButton2.Appearance.Options.UseForeColor = true;
             this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(289, 4);
+            this.simpleButton2.Location = new System.Drawing.Point(288, 4);
             this.simpleButton2.Margin = new System.Windows.Forms.Padding(4);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(102, 35);
@@ -308,7 +308,7 @@
             this.bntSua.Appearance.Options.UseForeColor = true;
             this.bntSua.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.bntSua.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bntSua.ImageOptions.Image")));
-            this.bntSua.Location = new System.Drawing.Point(577, 4);
+            this.bntSua.Location = new System.Drawing.Point(576, 4);
             this.bntSua.Margin = new System.Windows.Forms.Padding(4);
             this.bntSua.Name = "bntSua";
             this.bntSua.Size = new System.Drawing.Size(90, 35);
@@ -325,7 +325,7 @@
             this.btnXoa.Appearance.Options.UseForeColor = true;
             this.btnXoa.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.btnXoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.ImageOptions.Image")));
-            this.btnXoa.Location = new System.Drawing.Point(788, 4);
+            this.btnXoa.Location = new System.Drawing.Point(787, 4);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(84, 35);
@@ -342,7 +342,7 @@
             this.btnThoat.Appearance.Options.UseForeColor = true;
             this.btnThoat.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.btnThoat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.ImageOptions.Image")));
-            this.btnThoat.Location = new System.Drawing.Point(1431, 4);
+            this.btnThoat.Location = new System.Drawing.Point(1430, 4);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(97, 35);
@@ -355,7 +355,7 @@
             this.txtTimkiem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTimkiem.Location = new System.Drawing.Point(1170, 4);
+            this.txtTimkiem.Location = new System.Drawing.Point(1169, 4);
             this.txtTimkiem.Margin = new System.Windows.Forms.Padding(4);
             this.txtTimkiem.Name = "txtTimkiem";
             this.txtTimkiem.Size = new System.Drawing.Size(113, 22);
@@ -370,7 +370,7 @@
             this.btnRefresh.Appearance.Options.UseForeColor = true;
             this.btnRefresh.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.btnRefresh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.ImageOptions.Image")));
-            this.btnRefresh.Location = new System.Drawing.Point(1292, 4);
+            this.btnRefresh.Location = new System.Drawing.Point(1291, 4);
             this.btnRefresh.Margin = new System.Windows.Forms.Padding(4);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(102, 35);
@@ -388,7 +388,7 @@
             this.btnTimKiem.AutoWidthInLayoutControl = true;
             this.btnTimKiem.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.btnTimKiem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.ImageOptions.Image")));
-            this.btnTimKiem.Location = new System.Drawing.Point(993, 4);
+            this.btnTimKiem.Location = new System.Drawing.Point(992, 4);
             this.btnTimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(79, 35);
@@ -420,7 +420,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.58957F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.41043F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 211F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 212F));
             this.tableLayoutPanel1.Controls.Add(this.txtMADK, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.labelControl4, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.labelControl5, 0, 0);
@@ -526,7 +526,7 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60.11561F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 155F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 159F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 233F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 234F));
             this.tableLayoutPanel4.Controls.Add(this.txtPhuThu, 4, 0);
             this.tableLayoutPanel4.Controls.Add(this.labelControl14, 3, 0);
             this.tableLayoutPanel4.Controls.Add(this.cbDV, 1, 2);
@@ -566,7 +566,7 @@
             // 
             // txtPhuThu
             // 
-            this.txtPhuThu.Location = new System.Drawing.Point(691, 4);
+            this.txtPhuThu.Location = new System.Drawing.Point(690, 4);
             this.txtPhuThu.Margin = new System.Windows.Forms.Padding(4);
             this.txtPhuThu.Name = "txtPhuThu";
             this.txtPhuThu.Size = new System.Drawing.Size(175, 22);
@@ -581,7 +581,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl14.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl14.Appearance.Options.UseFont = true;
-            this.labelControl14.Location = new System.Drawing.Point(532, 4);
+            this.labelControl14.Location = new System.Drawing.Point(531, 4);
             this.labelControl14.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl14.Name = "labelControl14";
             this.labelControl14.Size = new System.Drawing.Size(58, 17);
@@ -592,7 +592,7 @@
             // 
             this.cbDV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDV.FormattingEnabled = true;
-            this.cbDV.Location = new System.Drawing.Point(153, 72);
+            this.cbDV.Location = new System.Drawing.Point(152, 72);
             this.cbDV.Margin = new System.Windows.Forms.Padding(4);
             this.cbDV.Name = "cbDV";
             this.cbDV.Size = new System.Drawing.Size(210, 24);
@@ -642,7 +642,7 @@
             // 
             // txtTienDV
             // 
-            this.txtTienDV.Location = new System.Drawing.Point(153, 110);
+            this.txtTienDV.Location = new System.Drawing.Point(152, 110);
             this.txtTienDV.Margin = new System.Windows.Forms.Padding(4);
             this.txtTienDV.Name = "txtTienDV";
             this.txtTienDV.Size = new System.Drawing.Size(211, 22);
@@ -656,7 +656,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl15.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl15.Appearance.Options.UseFont = true;
-            this.labelControl15.Location = new System.Drawing.Point(532, 39);
+            this.labelControl15.Location = new System.Drawing.Point(531, 39);
             this.labelControl15.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl15.Name = "labelControl15";
             this.labelControl15.Size = new System.Drawing.Size(58, 17);
@@ -670,7 +670,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl16.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl16.Appearance.Options.UseFont = true;
-            this.labelControl16.Location = new System.Drawing.Point(532, 72);
+            this.labelControl16.Location = new System.Drawing.Point(531, 72);
             this.labelControl16.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl16.Name = "labelControl16";
             this.labelControl16.Size = new System.Drawing.Size(83, 17);
@@ -679,7 +679,7 @@
             // 
             // txtSoNgay
             // 
-            this.txtSoNgay.Location = new System.Drawing.Point(691, 39);
+            this.txtSoNgay.Location = new System.Drawing.Point(690, 39);
             this.txtSoNgay.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoNgay.Name = "txtSoNgay";
             this.txtSoNgay.Properties.ReadOnly = true;
@@ -688,7 +688,7 @@
             // 
             // txtThanhToan
             // 
-            this.txtThanhToan.Location = new System.Drawing.Point(691, 72);
+            this.txtThanhToan.Location = new System.Drawing.Point(690, 72);
             this.txtThanhToan.Margin = new System.Windows.Forms.Padding(4);
             this.txtThanhToan.Name = "txtThanhToan";
             this.txtThanhToan.Size = new System.Drawing.Size(175, 22);
@@ -698,7 +698,7 @@
             // 
             this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Office2003;
             this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(377, 72);
+            this.simpleButton1.Location = new System.Drawing.Point(376, 72);
             this.simpleButton1.Margin = new System.Windows.Forms.Padding(4);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(111, 30);
@@ -713,7 +713,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl17.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl17.Appearance.Options.UseFont = true;
-            this.labelControl17.Location = new System.Drawing.Point(532, 146);
+            this.labelControl17.Location = new System.Drawing.Point(531, 146);
             this.labelControl17.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl17.Name = "labelControl17";
             this.labelControl17.Size = new System.Drawing.Size(77, 17);
@@ -722,7 +722,7 @@
             // 
             // txtThanhTien
             // 
-            this.txtThanhTien.Location = new System.Drawing.Point(691, 146);
+            this.txtThanhTien.Location = new System.Drawing.Point(690, 146);
             this.txtThanhTien.Margin = new System.Windows.Forms.Padding(4);
             this.txtThanhTien.Name = "txtThanhTien";
             this.txtThanhTien.Properties.ReadOnly = true;
@@ -736,7 +736,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl12.Appearance.Options.UseFont = true;
-            this.labelControl12.Location = new System.Drawing.Point(532, 110);
+            this.labelControl12.Location = new System.Drawing.Point(531, 110);
             this.labelControl12.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl12.Name = "labelControl12";
             this.labelControl12.Size = new System.Drawing.Size(59, 17);
@@ -761,7 +761,7 @@
             // 
             this.cbMaCS.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMaCS.FormattingEnabled = true;
-            this.cbMaCS.Location = new System.Drawing.Point(153, 146);
+            this.cbMaCS.Location = new System.Drawing.Point(152, 146);
             this.cbMaCS.Margin = new System.Windows.Forms.Padding(4);
             this.cbMaCS.Name = "cbMaCS";
             this.cbMaCS.Size = new System.Drawing.Size(210, 24);
@@ -784,7 +784,7 @@
             // dtNgatNhan
             // 
             this.dtNgatNhan.Checked = false;
-            this.dtNgatNhan.Location = new System.Drawing.Point(153, 185);
+            this.dtNgatNhan.Location = new System.Drawing.Point(152, 185);
             this.dtNgatNhan.Margin = new System.Windows.Forms.Padding(4);
             this.dtNgatNhan.Name = "dtNgatNhan";
             this.dtNgatNhan.Size = new System.Drawing.Size(209, 23);
@@ -793,7 +793,7 @@
             // 
             // txtGiamGia
             // 
-            this.txtGiamGia.Location = new System.Drawing.Point(691, 110);
+            this.txtGiamGia.Location = new System.Drawing.Point(690, 110);
             this.txtGiamGia.Margin = new System.Windows.Forms.Padding(4);
             this.txtGiamGia.Name = "txtGiamGia";
             this.txtGiamGia.Size = new System.Drawing.Size(175, 22);
@@ -802,7 +802,7 @@
             // 
             // txtTienPhong
             // 
-            this.txtTienPhong.Location = new System.Drawing.Point(153, 39);
+            this.txtTienPhong.Location = new System.Drawing.Point(152, 39);
             this.txtTienPhong.Margin = new System.Windows.Forms.Padding(4);
             this.txtTienPhong.Name = "txtTienPhong";
             this.txtTienPhong.Properties.ReadOnly = true;
