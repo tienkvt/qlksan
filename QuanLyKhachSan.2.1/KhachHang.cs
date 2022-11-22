@@ -164,7 +164,7 @@ namespace QuanLyKhachSan._2._1
 
             String msv = txtMAKH.Text;
             String sql = "Select MaKhachHang from KHACH_HANG  where   MaKhachHang ='" + msv + "'";
-            SqlConnection con = new SqlConnection(@"server=DESKTOP-RHDVU9P\MAYAO;database=QLKS;user id=sa;password=123");
+            SqlConnection con = new SqlConnection(@"Data Source=LEVY7F50\MSSQLSERVER2014;Initial Catalog=QLKS;Integrated Security=True");
             SqlCommand cmd = new SqlCommand(sql, con);
             con.Open();
             SqlDataReader dr = cmd.ExecuteReader();
@@ -210,6 +210,11 @@ namespace QuanLyKhachSan._2._1
         }
 
         private void gridControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void kHACHHANGBindingSource_CurrentChanged(object sender, EventArgs e)
         {
 
         }

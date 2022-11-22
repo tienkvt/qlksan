@@ -13,7 +13,7 @@ namespace QuanLyKhachSan._2._1
     {
         public string GetLastID(string nameTable, string nameSelectColumn)
         {
-            SqlConnection con = new SqlConnection(@"server=DESKTOP-RHDVU9P\MAYAO;database=QLKS;user id=sa;password=123");
+            SqlConnection con = new SqlConnection(@"Data Source=LEVY7F50\MSSQLSERVER2014;Initial Catalog=QLKS;Integrated Security=True");
             con.Open();
             SqlCommand sql = new SqlCommand("SELECT TOP 1 " + nameSelectColumn + " FROM " + nameTable + " ORDER BY " + nameSelectColumn + " DESC", con);
             return (string) sql.ExecuteScalar();

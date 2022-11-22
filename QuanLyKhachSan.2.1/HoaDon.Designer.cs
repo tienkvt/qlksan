@@ -3788,7 +3788,7 @@ SELECT MaHoaDon, MaPhong, PhuThu, TienPhong, TienDichVu, GiamGiaKH, HinhThucThan
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::QuanLyKhachSan._2._1.Properties.Settings.Default.QLKSConnectionString1;
+            this._connection.ConnectionString = global::QuanLyKhachSan._2._1.Properties.Settings.Default.QLKSConnectionString2;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4373,7 +4373,7 @@ SELECT MaSuDungDvu, MaDichVu, MaPhieuThue, SoLuong FROM DANH_SACH_SU_DUNG_DICH_V
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::QuanLyKhachSan._2._1.Properties.Settings.Default.QLKSConnectionString1;
+            this._connection.ConnectionString = global::QuanLyKhachSan._2._1.Properties.Settings.Default.QLKSConnectionString2;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4789,7 +4789,7 @@ SELECT MaDichVu, LoaiDichVu, DonVi, DonGia FROM DICH_VU WHERE (MaDichVu = @MaDic
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::QuanLyKhachSan._2._1.Properties.Settings.Default.QLKSConnectionString1;
+            this._connection.ConnectionString = global::QuanLyKhachSan._2._1.Properties.Settings.Default.QLKSConnectionString2;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5210,7 +5210,7 @@ SELECT MaHoaDon, NhanVienLap, TongTien, NgayLap, MaNhanPhong FROM HOA_DON WHERE 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::QuanLyKhachSan._2._1.Properties.Settings.Default.QLKSConnectionString1;
+            this._connection.ConnectionString = global::QuanLyKhachSan._2._1.Properties.Settings.Default.QLKSConnectionString2;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5673,7 +5673,7 @@ SELECT MaKhachHang, TenKhachHang, CMND, GioiTinh, DiaChi, DienThoai, QuocTich FR
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::QuanLyKhachSan._2._1.Properties.Settings.Default.QLKSConnectionString1;
+            this._connection.ConnectionString = global::QuanLyKhachSan._2._1.Properties.Settings.Default.QLKSConnectionString2;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6166,7 +6166,7 @@ SELECT MaNhanPhong, MaPhieuThue, MaKhachHang FROM PHIEU_NHAN_PHONG WHERE (MaNhan
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::QuanLyKhachSan._2._1.Properties.Settings.Default.QLKSConnectionString1;
+            this._connection.ConnectionString = global::QuanLyKhachSan._2._1.Properties.Settings.Default.QLKSConnectionString2;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="QLKSDataSet" targetNamespace="http://tempuri.org/QLKSDataSet.xsd" xmlns:mstns="http://tempuri.org/QLKSDataSet.xsd" xmlns="http://tempuri.org/QLKSDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="QLKSDataSet1" targetNamespace="http://tempuri.org/QLKSDataSet1.xsd" xmlns:mstns="http://tempuri.org/QLKSDataSet1.xsd" xmlns="http://tempuri.org/QLKSDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -1029,7 +1029,7 @@ SELECT MaThietBi, TenThietBi, MaLoaiPhong, SoLuong FROM THIET_BI WHERE (MaThietB
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="QLKSDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="QLKSDataSet" msprop:Generator_DataSetName="QLKSDataSet">
+  <xs:element name="QLKSDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="QLKSDataSet1" msprop:Generator_DataSetName="QLKSDataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="CHI_TIET_HOA_DON" msprop:Generator_RowEvHandlerName="CHI_TIET_HOA_DONRowChangeEventHandler" msprop:Generator_RowDeletedName="CHI_TIET_HOA_DONRowDeleted" msprop:Generator_RowDeletingName="CHI_TIET_HOA_DONRowDeleting" msprop:Generator_RowEvArgName="CHI_TIET_HOA_DONRowChangeEvent" msprop:Generator_TablePropName="CHI_TIET_HOA_DON" msprop:Generator_RowChangedName="CHI_TIET_HOA_DONRowChanged" msprop:Generator_RowChangingName="CHI_TIET_HOA_DONRowChanging" msprop:Generator_TableClassName="CHI_TIET_HOA_DONDataTable" msprop:Generator_RowClassName="CHI_TIET_HOA_DONRow" msprop:Generator_TableVarName="tableCHI_TIET_HOA_DON" msprop:Generator_UserTableName="CHI_TIET_HOA_DON">

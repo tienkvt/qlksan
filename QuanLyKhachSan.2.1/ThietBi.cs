@@ -64,7 +64,7 @@ namespace QuanLyKhachSan._2._1
 
             String msv = txtMaTB.Text;
             String sql = "Select MaThietBi from THIET_BI  where   MaThietBi ='" + msv + "'";
-            SqlConnection con = new SqlConnection(@"server=DESKTOP-RHDVU9P\MAYAO;database=QLKS;user id=sa;password=123");
+            SqlConnection con = new SqlConnection(@"Data Source=LEVY7F50\MSSQLSERVER2014;Initial Catalog=QLKS;Integrated Security=True");
             SqlCommand cmd = new SqlCommand(sql, con);
             con.Open();
             SqlDataReader dr = cmd.ExecuteReader();

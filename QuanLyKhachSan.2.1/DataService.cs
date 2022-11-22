@@ -17,7 +17,7 @@ namespace QuanLyKhachSan._2._1
 
             try
             {
-                String str = @"server=DESKTOP-RHDVU9P\MAYAO;database=QLKS;user id=sa;password=123";
+                String str = @"Data Source=LEVY7F50\MSSQLSERVER2014;Initial Catalog=QLKS;Integrated Security=True";
                 cn.ConnectionString = str;
                 cn.Open();
                 return true;

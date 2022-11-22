@@ -38,7 +38,7 @@ namespace QuanLyKhachSan._2._1
 
             String tendangnhap = txtTenDangNhap.Text;
             String sql = "Select [TenDangNhap] from [NGUOI_DUNG]  where   TenDangNhap ='" + tendangnhap + "'";
-            SqlConnection con = new SqlConnection(@"server=DESKTOP-RHDVU9P\MAYAO;database=QLKS;user id=sa;password=123");
+            SqlConnection con = new SqlConnection(@"Data Source=LEVY7F50\MSSQLSERVER2014;Initial Catalog=QLKS;Integrated Security=True");
             SqlCommand cmd = new SqlCommand(sql, con);
             con.Open();
             SqlDataReader dr = cmd.ExecuteReader();
@@ -59,7 +59,7 @@ namespace QuanLyKhachSan._2._1
 
             String matkhau = txtMatKhau.Text;
             String sql = "Select [MatKhau] from [NGUOI_DUNG]  where   MatKhau ='" + matkhau + "'";
-            SqlConnection con = new SqlConnection(@"server=DESKTOP-RHDVU9P\MAYAO;database=QLKS;user id=sa;password=123");
+            SqlConnection con = new SqlConnection(@"Data Source=LEVY7F50\MSSQLSERVER2014;Initial Catalog=QLKS;Integrated Security=True");
             SqlCommand cmd = new SqlCommand(sql, con);
             con.Open();
             SqlDataReader dr = cmd.ExecuteReader();
