@@ -7,16 +7,16 @@ using System.Data.SqlClient;
 using System.Data;
 namespace QuanLyKhachSan._2._1
 {
-    class DataService___
+    class DataService
     {
         SqlConnection cn = new SqlConnection();
 
-        //mo ket noi voi database
         public Boolean openConection()
         {
 
             try
             {
+                cn = new SqlConnection();
                 String str = @"Data Source=LEVY7F50\MSSQLSERVER2014;Initial Catalog=QLKS;Integrated Security=True";
                 cn.ConnectionString = str;
                 cn.Open();
@@ -36,10 +36,9 @@ namespace QuanLyKhachSan._2._1
                 return null;
             SqlCommand cmd = new SqlCommand(sql, cn);
             SqlDataReader dr = cmd.ExecuteReader();
-            //cn.Open();
             return dr;
         }
-        //ham lay du lieu tu database
+
         public DataTable getDataTable(String sql)
         {
 

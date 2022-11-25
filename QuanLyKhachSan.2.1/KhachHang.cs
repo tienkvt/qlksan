@@ -10,12 +10,15 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using System.Data.Sql;
 using System.Data.SqlClient;
-
+using QuanLyKhachSan._2._1.DAO;
+using QuanLyKhachSan._2._1.BUS;
+using QuanLyKhachSan._2._1.DTO;
 
 namespace QuanLyKhachSan._2._1
 {
     public partial class KhachHang : DevExpress.XtraEditors.XtraForm
     {
+        KhachHangBUS khBus = new KhachHangBUS();
         public KhachHang()
         {
             InitializeComponent();
@@ -24,6 +27,7 @@ namespace QuanLyKhachSan._2._1
         {
             //TODO: This line of code loads data into the 'qLKSDataSet.KHACH_HANG' table. You can move, or remove it, as needed.
             this.kHACH_HANGTableAdapter.Fill(this.qLKSDataSet.KHACH_HANG);
+            gridControl1.DataSource = this.qLKSDataSet.KHACH_HANG;
             #region ham tang ma tu dong    
             AutoIncreCode a = new AutoIncreCode();
             a.GetLastID("KHACH_HANG", "MaKhachHang");
@@ -34,13 +38,19 @@ namespace QuanLyKhachSan._2._1
         }
         public void LoadData()
         {
-            DataService db = new DataService();
-            String sql = "select * from KHACH_HANG ";
-            DataTable dt = db.getDataTable(sql);
-              gridControl1.DataSource = dt;
-            
+            DataTable dt = khBus.LayDuLieu();
+            gridControl1.DataSource = dt;
         }
 
+        public void resetForm()
+        {
+            txtTENKH.Text = "";
+            txtQuocTich.Text = "";
+            txtDIACHI.Text = "";
+            txtSDT.Text = "";
+            txtCMND.Text = "";
+            cbGioiTinh.SelectedItem = "Nam";
+        }
 
         public void click_them()
         {
@@ -50,19 +60,27 @@ namespace QuanLyKhachSan._2._1
             string lastid = a.GetLastID("KHACH_HANG", "MaKhachHang");
             string ID = a.NextID(lastid, "K");
             #endregion
-            String sql;
-            txtMAKH.Text = ID;    
+
             String hoten = txtTENKH.Text;
             String cmnd = txtCMND.Text;
             String diachi = txtDIACHI.Text;
             String dienthoai = txtSDT.Text;
             String quoctich = txtQuocTich.Text;
             String gioitinh=cbGioiTinh.SelectedItem.ToString();
-            sql = "insert into KHACH_HANG(MaKhachHang,TenKhachHang,CMND,GioiTinh ,DiaChi,DienThoai ,QuocTich) values ('" + txtMAKH.Text + "',N'" + hoten + "','" + cmnd + "',N'" + gioitinh + "',N'" + diachi + "','" + dienthoai + "',N'" + quoctich + "')";
-            DataService db = new DataService();
-            db.executeQuery(sql);
+            KH kh = new KH()
+            {
+                id = ID,
+                hoten = hoten,
+                cmnd = cmnd,
+                diachi = diachi,
+                dienthoai = dienthoai,
+                quoctich = quoctich,
+                gioitinh = gioitinh
+            };
+            khBus.ThemKhachHang(kh);
 
-
+            txtMAKH.Text = a.NextID(ID, "K");
+            resetForm();
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -77,18 +95,17 @@ namespace QuanLyKhachSan._2._1
         }
         public void click_xoa()
         {
-
             String masv = gridView2.GetRowCellValue(gridView2.FocusedRowHandle, "MaKhachHang").ToString();
-            String sql1 = "delete KHACH_HANG where MaKhachHang='" + masv + "'";
-            DataService db = new DataService();
-
-            db.executeQuery(sql1);
+            KH kh = new KH()
+            {
+                id = masv
+            };
+            khBus.XoaKhachHang(kh);
         }
-       
 
         private void btnXoa_Click_1(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn có thật sự muốn xóa một Khách hàng !!!", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            if (MessageBox.Show("Bạn có thật sự muốn xóa Khách hàng này!!!", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
             {
                 
                 LoadData();
@@ -96,13 +113,10 @@ namespace QuanLyKhachSan._2._1
            
             click_xoa();
             LoadData();
-
-
         }
         public void click_sua()
         {
 
-            String sql;
             String masv = gridView2.GetRowCellValue(gridView2.FocusedRowHandle, "MaKhachHang").ToString();
             String hoten = txtTENKH.Text;
             String cmnd = txtCMND.Text;
@@ -110,17 +124,24 @@ namespace QuanLyKhachSan._2._1
             String dienthoai = txtSDT.Text;
             String quoctich = txtQuocTich.Text;
             String gioitinh = cbGioiTinh.SelectedItem.ToString();
-            sql = "update KHACH_HANG set  TenKhachHang=N'" + hoten + "', CMND='" + cmnd + "',DiaChi=N'" + diachi + "' , DienThoai='" + dienthoai + "',QuocTich=N'" + quoctich + "',GioiTinh=N'" + gioitinh + "' where MaKhachHang='" + masv + "'";
-            DataService db = new DataService();
-            db.executeQuery(sql);
-
+            KH kh = new KH()
+            {
+                id = masv,
+                hoten = hoten,
+                cmnd = cmnd,
+                diachi = diachi,
+                dienthoai = dienthoai,
+                quoctich = quoctich,
+                gioitinh = gioitinh
+            };
+            khBus.SuaKhachHang(kh);
         }
 
         private void bntSua_Click(object sender, EventArgs e)
         {
             click_sua();
             LoadData();
-            MessageBox.Show("bạn đã sửa thông tin Khách hàng  ", "thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Bạn đã sửa thông tin Khách hàng", "thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
@@ -135,9 +156,7 @@ namespace QuanLyKhachSan._2._1
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            DataService db = new DataService();
-            string sql = "select * from KHACH_HANG ";
-            DataTable dt = db.getDataTable(sql);
+            DataTable dt = khBus.LayDuLieu();
             if (txtTimkiem.Text != " ")
             {
                 dt.DefaultView.RowFilter = "MaKhachHang LIKE '%" + txtTimkiem.Text + "%' or TenKhachHang LIKE '%" + txtTimkiem.Text + "%' ";
@@ -162,27 +181,19 @@ namespace QuanLyKhachSan._2._1
         public bool check_masv()
         {
 
-            String msv = txtMAKH.Text;
-            String sql = "Select MaKhachHang from KHACH_HANG  where   MaKhachHang ='" + msv + "'";
-            SqlConnection con = new SqlConnection(@"Data Source=LEVY7F50\MSSQLSERVER2014;Initial Catalog=QLKS;Integrated Security=True");
-            SqlCommand cmd = new SqlCommand(sql, con);
-            con.Open();
-            SqlDataReader dr = cmd.ExecuteReader();
+            String makh = txtMAKH.Text;
+            SqlDataReader dr = khBus.CheckMaKH(makh);
 
             if (dr.Read())
             {
                 MessageBox.Show("Mã khách hàng này đã có rồi", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 LoadData();
                 return true;
-
-
             }
             else
             {
                 return false;
-
             }
-
         }
 
         private void txtCMND_KeyPress(object sender, KeyPressEventArgs e)

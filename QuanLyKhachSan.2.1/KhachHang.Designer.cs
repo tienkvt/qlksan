@@ -192,7 +192,7 @@
             this.btnThem.Appearance.Options.UseFont = true;
             this.btnThem.Appearance.Options.UseForeColor = true;
             this.btnThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.ImageOptions.Image")));
-            this.btnThem.Location = new System.Drawing.Point(27, 3);
+            this.btnThem.Location = new System.Drawing.Point(26, 3);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(74, 28);
             this.btnThem.TabIndex = 2;
@@ -207,7 +207,7 @@
             this.txtMAKH.Location = new System.Drawing.Point(99, 3);
             this.txtMAKH.Name = "txtMAKH";
             this.txtMAKH.Properties.ReadOnly = true;
-            this.txtMAKH.Size = new System.Drawing.Size(231, 20);
+            this.txtMAKH.Size = new System.Drawing.Size(230, 20);
             this.txtMAKH.TabIndex = 3;
             // 
             // bntSua
@@ -218,7 +218,7 @@
             this.bntSua.Appearance.Options.UseFont = true;
             this.bntSua.Appearance.Options.UseForeColor = true;
             this.bntSua.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("bntSua.ImageOptions.Image")));
-            this.bntSua.Location = new System.Drawing.Point(458, 3);
+            this.bntSua.Location = new System.Drawing.Point(457, 3);
             this.bntSua.Name = "bntSua";
             this.bntSua.Size = new System.Drawing.Size(77, 28);
             this.bntSua.TabIndex = 4;
@@ -230,7 +230,7 @@
             this.txtTENKH.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTENKH.Location = new System.Drawing.Point(443, 3);
+            this.txtTENKH.Location = new System.Drawing.Point(442, 3);
             this.txtTENKH.Name = "txtTENKH";
             this.txtTENKH.Size = new System.Drawing.Size(266, 20);
             this.txtTENKH.TabIndex = 5;
@@ -243,7 +243,7 @@
             this.btnXoa.Appearance.Options.UseFont = true;
             this.btnXoa.Appearance.Options.UseForeColor = true;
             this.btnXoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnXoa.ImageOptions.Image")));
-            this.btnXoa.Location = new System.Drawing.Point(657, 3);
+            this.btnXoa.Location = new System.Drawing.Point(656, 3);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(77, 28);
             this.btnXoa.TabIndex = 6;
@@ -255,7 +255,7 @@
             this.txtCMND.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCMND.Location = new System.Drawing.Point(814, 3);
+            this.txtCMND.Location = new System.Drawing.Point(813, 3);
             this.txtCMND.Name = "txtCMND";
             this.txtCMND.Size = new System.Drawing.Size(244, 20);
             this.txtCMND.TabIndex = 7;
@@ -266,7 +266,7 @@
             this.txtDIACHI.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDIACHI.Location = new System.Drawing.Point(443, 36);
+            this.txtDIACHI.Location = new System.Drawing.Point(442, 36);
             this.txtDIACHI.Name = "txtDIACHI";
             this.txtDIACHI.Size = new System.Drawing.Size(266, 20);
             this.txtDIACHI.TabIndex = 8;
@@ -276,7 +276,7 @@
             this.txtSDT.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSDT.Location = new System.Drawing.Point(814, 36);
+            this.txtSDT.Location = new System.Drawing.Point(813, 36);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(244, 20);
             this.txtSDT.TabIndex = 9;
@@ -289,7 +289,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtQuocTich.Location = new System.Drawing.Point(99, 36);
             this.txtQuocTich.Name = "txtQuocTich";
-            this.txtQuocTich.Size = new System.Drawing.Size(231, 20);
+            this.txtQuocTich.Size = new System.Drawing.Size(230, 20);
             this.txtQuocTich.TabIndex = 10;
             // 
             // labelControl2
@@ -312,7 +312,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(336, 3);
+            this.labelControl3.Location = new System.Drawing.Point(335, 3);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(90, 13);
             this.labelControl3.TabIndex = 13;
@@ -325,7 +325,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(715, 3);
+            this.labelControl4.Location = new System.Drawing.Point(714, 3);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(32, 13);
             this.labelControl4.TabIndex = 14;
@@ -338,7 +338,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(336, 36);
+            this.labelControl5.Location = new System.Drawing.Point(335, 36);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(39, 13);
             this.labelControl5.TabIndex = 15;
@@ -351,7 +351,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(715, 36);
+            this.labelControl6.Location = new System.Drawing.Point(714, 36);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(77, 13);
             this.labelControl6.TabIndex = 16;
@@ -379,7 +379,7 @@
             this.btnTimKiem.Appearance.Options.UseForeColor = true;
             this.btnTimKiem.AutoWidthInLayoutControl = true;
             this.btnTimKiem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.ImageOptions.Image")));
-            this.btnTimKiem.Location = new System.Drawing.Point(812, 3);
+            this.btnTimKiem.Location = new System.Drawing.Point(811, 3);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(35, 28);
             this.btnTimKiem.TabIndex = 20;
@@ -390,7 +390,7 @@
             this.txtTimkiem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTimkiem.Location = new System.Drawing.Point(871, 3);
+            this.txtTimkiem.Location = new System.Drawing.Point(870, 3);
             this.txtTimkiem.Name = "txtTimkiem";
             this.txtTimkiem.Size = new System.Drawing.Size(184, 20);
             this.txtTimkiem.TabIndex = 21;
@@ -401,7 +401,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cbGioiTinh.EditValue = "Nam ";
-            this.cbGioiTinh.Location = new System.Drawing.Point(1139, 3);
+            this.cbGioiTinh.Location = new System.Drawing.Point(1138, 3);
             this.cbGioiTinh.Name = "cbGioiTinh";
             this.cbGioiTinh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -409,7 +409,7 @@
             this.cbGioiTinh.Properties.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.cbGioiTinh.Size = new System.Drawing.Size(190, 20);
+            this.cbGioiTinh.Size = new System.Drawing.Size(191, 20);
             this.cbGioiTinh.TabIndex = 19;
             // 
             // btnThoat
@@ -434,7 +434,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(1064, 3);
+            this.labelControl8.Location = new System.Drawing.Point(1063, 3);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(48, 13);
             this.labelControl8.TabIndex = 18;
@@ -448,7 +448,7 @@
             this.btnRefresh.Appearance.Options.UseFont = true;
             this.btnRefresh.Appearance.Options.UseForeColor = true;
             this.btnRefresh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.ImageOptions.Image")));
-            this.btnRefresh.Location = new System.Drawing.Point(1094, 3);
+            this.btnRefresh.Location = new System.Drawing.Point(1093, 3);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(87, 28);
             this.btnRefresh.TabIndex = 23;
@@ -469,7 +469,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 250F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 75F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 195F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 196F));
             this.tableLayoutPanel1.Controls.Add(this.labelControl2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtMAKH, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.cbGioiTinh, 7, 0);
@@ -504,7 +504,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 76F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 111F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112F));
             this.tableLayoutPanel2.Controls.Add(this.simpleButton1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnThem, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnThoat, 7, 0);
@@ -528,7 +528,7 @@
             this.simpleButton1.Appearance.Options.UseFont = true;
             this.simpleButton1.Appearance.Options.UseForeColor = true;
             this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(223, 3);
+            this.simpleButton1.Location = new System.Drawing.Point(222, 3);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(77, 28);
             this.simpleButton1.TabIndex = 24;

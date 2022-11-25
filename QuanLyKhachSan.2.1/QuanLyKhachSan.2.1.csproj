@@ -88,6 +88,10 @@
     <Compile Include="BaoCaoKH.Designer.cs">
       <DependentUpon>BaoCaoKH.cs</DependentUpon>
     </Compile>
+    <Compile Include="BUS\KhachHangBUS.cs" />
+    <Compile Include="BUS\NguoiDungBUS.cs" />
+    <Compile Include="BUS\NhanPhongBUS.cs" />
+    <Compile Include="BUS\PhongBUS.cs" />
     <Compile Include="DangKi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +110,11 @@
     <Compile Include="DanhsachHD.Designer.cs">
       <DependentUpon>DanhsachHD.cs</DependentUpon>
     </Compile>
+    <Compile Include="DAO\DataService.cs" />
+    <Compile Include="DAO\KhachHangDAO.cs" />
+    <Compile Include="DAO\NguoiDungDAO.cs" />
+    <Compile Include="DAO\NhanPhongDAO.cs" />
+    <Compile Include="DAO\PhongDAO.cs" />
     <Compile Include="DataService.cs" />
     <Compile Include="DichVu.cs">
       <SubType>Form</SubType>
@@ -119,11 +128,19 @@
     <Compile Include="DoiMK.Designer.cs">
       <DependentUpon>DoiMK.cs</DependentUpon>
     </Compile>
+    <Compile Include="DTO\ChiTietPhieuNhanPhong.cs" />
+    <Compile Include="DTO\KH.cs" />
+    <Compile Include="DTO\NguoiDung.cs" />
+    <Compile Include="DTO\PhieuNhanPhong.cs" />
+    <Compile Include="DTO\PhongDTO.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDon.cs">
+      <DependentUpon>HoaDon.xsd</DependentUpon>
     </Compile>
     <Compile Include="HoaDon.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -289,6 +306,7 @@
       <DependentUpon>QLKSDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

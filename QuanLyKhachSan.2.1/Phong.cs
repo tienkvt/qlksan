@@ -10,12 +10,14 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using System.Data.Sql;
 using System.Data.SqlClient;
-
+using QuanLyKhachSan._2._1.BUS;
+using QuanLyKhachSan._2._1.DTO;
 
 namespace QuanLyKhachSan._2._1
 {
     public partial class Phong : DevExpress.XtraEditors.XtraForm
     {
+        PhongBUS phongBus = new PhongBUS();
         public Phong()
         {
             InitializeComponent();
@@ -30,25 +32,19 @@ namespace QuanLyKhachSan._2._1
         }
         public void LoadData()
         {
-            DataService db = new DataService();
-            String sql = "select p.MaPhong,tr.TenLoaiTinhTrang,lp.TenLoaiPhong,lp.DonGia,lp.SoNguoiChuan,lp.SoNguoiToiDa from PHONG p, LOAI_TINH_TRANG tr,LOAI_PHONG lp where p.MaLoaiTinhTrangPhong = tr.MaLoaiTinhTrangPhong and p.MaLoaiPhong = lp.MaLoaiPhong";
-            DataTable dt = db.getDataTable(sql);
+            DataTable dt = phongBus.LayDuLieu();
             gridControl1.DataSource = dt;
         }
         public void load_loaitinhtrang()
         {
-            DataService db = new DataService();
-            String sql = "select * from LOAI_TINH_TRANG tr  ";
-            DataTable dt = db.getDataTable(sql);
+            DataTable dt = phongBus.LayLoaiTinhTrang();
             cbLoaiTinhTrang.DataSource = dt;
             cbLoaiTinhTrang.DisplayMember = "TenLoaiTinhTrang";
             cbLoaiTinhTrang.ValueMember = "MaLoaiTinhTrangPhong";
         }
         public void load_loaiphong()
         {
-            DataService db = new DataService();
-            String sql = "select lp.MaLoaiPhong,lp.TenLoaiPhong,lp.DonGia,lp.SoNguoiChuan,lp.SoNguoiToiDa from LOAI_PHONG lp";
-            DataTable dt = db.getDataTable(sql);
+            DataTable dt = phongBus.LayLoaiPhong();
             cbLoaiPhong.DataSource = dt;
             cbLoaiPhong.DisplayMember = "TenLoaiPhong";
             cbLoaiPhong.ValueMember = "MaLoaiPhong";
@@ -59,23 +55,22 @@ namespace QuanLyKhachSan._2._1
         public void click_them()
         {
             
-            String sql;
             String maphong = txtMaphong.Text;
             String maloaiphong = cbLoaiPhong.SelectedValue.ToString();
             String maloaitinhtrang = cbLoaiTinhTrang.SelectedValue.ToString();
-            sql = "insert into PHONG(MaPhong,MaLoaiPhong,MaLoaiTinhTrangPhong) values ('" + maphong + "','" + maloaiphong + "','"+maloaitinhtrang+"')";
-            DataService db = new DataService();
-            db.executeQuery(sql);
+            PhongDTO phong = new PhongDTO()
+            {
+                MaPhong = maphong,
+                MaLoaiPhong = maloaiphong,
+                MaLoaiTinhTrangPhong = maloaitinhtrang
+            };
+            phongBus.ThemPhong(phong);
         }
         public bool check_masv()
         {
 
-            String msv = txtMaphong.Text;
-            String sql = "Select MaPhong from PHONG  where   MaPhong ='" + msv + "'";
-            SqlConnection con = new SqlConnection(@"Data Source=LEVY7F50\MSSQLSERVER2014;Initial Catalog=QLKS;Integrated Security=True");
-            SqlCommand cmd = new SqlCommand(sql, con);
-            con.Open();
-            SqlDataReader dr = cmd.ExecuteReader();
+            String maphong = txtMaphong.Text;
+            SqlDataReader dr = phongBus.CheckMaPhong(maphong);
 
             if (dr.Read())
             {
@@ -105,13 +100,16 @@ namespace QuanLyKhachSan._2._1
         public void click_sua()
         {
 
-            String sql;
             String maphong = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaPhong").ToString();
             String maloaiphong = cbLoaiPhong.SelectedValue.ToString();
-            String maloaitinhtrang = cbLoaiTinhTrang.SelectedValue.ToString();        
-            sql = "update PHONG set  MaLoaiPhong=N'" + maloaiphong + "', MaLoaiTinhTrangPhong='"+maloaitinhtrang+"' where MaPhong='" + maphong + "'";
-            DataService db = new DataService();
-            db.executeQuery(sql);
+            String maloaitinhtrang = cbLoaiTinhTrang.SelectedValue.ToString();
+            PhongDTO phong = new PhongDTO()
+            {
+                MaPhong = maphong,
+                MaLoaiPhong = maloaiphong,
+                MaLoaiTinhTrangPhong = maloaitinhtrang
+            };
+            phongBus.SuaPhong(phong);
         }
 
         private void bntSua_Click(object sender, EventArgs e)
@@ -122,14 +120,8 @@ namespace QuanLyKhachSan._2._1
         }
         public void click_xoa()
         {
-            String sql;
             String maphong = gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaPhong").ToString();
-            //String maloaiphong= gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaLoaiPhong").ToString();
-            //String matinhtrang= gridView1.GetRowCellValue(gridView1.FocusedRowHandle, "MaLoaiTinhTrangPhong").ToString();/*and MaLoaiPhong='"+maloaiphong+"' and MaLoaiTinhTrangPhong='"+matinhtrang+"'*/ 
-            sql = "delete PHONG where MaPhong='" + maphong + "' ";
-            DataService db = new DataService();
-            db.executeQuery(sql);
-
+            phongBus.XoaPhong(maphong);
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -146,9 +138,7 @@ namespace QuanLyKhachSan._2._1
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            DataService db = new DataService();
-            string sql = "select * from PHONG ";
-            DataTable dt = db.getDataTable(sql);
+            DataTable dt = phongBus.LayDuLieu();
             if (txtTimkiem.Text != " ")
             {
                 dt.DefaultView.RowFilter = "MaPhong LIKE '%" + txtTimkiem.Text + "%' ";

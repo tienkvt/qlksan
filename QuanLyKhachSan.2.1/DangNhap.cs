@@ -10,24 +10,26 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using System.Data.Sql;
 using System.Data.SqlClient;
+using QuanLyKhachSan._2._1.DAO;
+using QuanLyKhachSan._2._1.BUS;
+using QuanLyKhachSan._2._1.DTO;
 
 namespace QuanLyKhachSan._2._1
 {
     public partial class DangNhap : DevExpress.XtraEditors.XtraForm
     {
+        NguoiDungBUS ndBus = new NguoiDungBUS();
         public DangNhap()
         {
             InitializeComponent();
         }
         public bool check_TenDangNhap()
         {
-
-            String tendangnhap = txtTenDangNhap.Text;
-            String sql = "Select [TenDangNhap] from [NGUOI_DUNG]  where   TenDangNhap ='" + tendangnhap + "'";
-            SqlConnection con = new SqlConnection(@"Data Source=LEVY7F50\MSSQLSERVER2014;Initial Catalog=QLKS;Integrated Security=True");
-            SqlCommand cmd = new SqlCommand(sql, con);
-            con.Open();
-            SqlDataReader dr = cmd.ExecuteReader();
+            NguoiDung nd = new NguoiDung()
+            {
+                tennd = txtTenDangNhap.Text
+            };
+            SqlDataReader dr = ndBus.layTenDangNhap(nd);
 
             if (dr.Read())
             {
@@ -42,13 +44,11 @@ namespace QuanLyKhachSan._2._1
         }
         public bool check_matkhau()
         {
-
-            String matkhau = txtMatKhau.Text;
-            String sql = "Select [MatKhau] from [NGUOI_DUNG]  where   MatKhau ='" + matkhau + "'";
-            SqlConnection con = new SqlConnection(@"Data Source=LEVY7F50\MSSQLSERVER2014;Initial Catalog=QLKS;Integrated Security=True");
-            SqlCommand cmd = new SqlCommand(sql, con);
-            con.Open();
-            SqlDataReader dr = cmd.ExecuteReader();
+            NguoiDung nd = new NguoiDung()
+            {
+                matkhau = txtMatKhau.Text
+            };
+            SqlDataReader dr = ndBus.layMatKhau(nd);
 
             if (dr.Read())
             {
@@ -70,11 +70,11 @@ namespace QuanLyKhachSan._2._1
             }
             else
             {
-                String sql = " SELECT [LoaiNguoiDung] FROM [NGUOI_DUNG] where TenDangNhap='"+txtTenDangNhap.Text+"'";
-                SqlConnection con = new SqlConnection(@"Data Source=LEVY7F50\MSSQLSERVER2014;Initial Catalog=QLKS;Integrated Security=True");
-                SqlCommand cmd = new SqlCommand(sql, con);
-                con.Open();
-                SqlDataReader dr = cmd.ExecuteReader();
+                NguoiDung nd = new NguoiDung()
+                {
+                    tennd = txtTenDangNhap.Text
+                };
+                SqlDataReader dr = ndBus.layLoaiNguoiDung(nd);
 
                 if (dr.Read())
                 {
@@ -82,8 +82,6 @@ namespace QuanLyKhachSan._2._1
                     Form1 a = new Form1(Msg);
                     a.ShowDialog();
                 }
-                
-
             }
         }
 
